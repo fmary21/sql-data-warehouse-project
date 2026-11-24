@@ -1,4 +1,4 @@
-------Bulk loading data into tables -------
+------Bulk loading bronze layer -------
 
 Truncate Table Bronze.crm_cust_info;
 Bulk Insert Bronze.crm_cust_info
