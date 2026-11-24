@@ -1,4 +1,6 @@
 ------Bulk loading bronze layer -------
+==============================================================================================
+------ Loading CRM tables------
 
 Truncate Table Bronze.crm_cust_info;
 Bulk Insert Bronze.crm_cust_info
@@ -26,7 +28,9 @@ With (
     Fieldterminator = ',',
     Tablock
 );
-
+=================================================================================================
+-------------Loading ERP tables ---
+    
 Truncate Table Bronze.erp_cust_az12;
 Bulk Insert Bronze.erp_cust_az12
 From 'C:\sql\sql-data-warehouse-project\datasets\source_erp\cust_az12.csv'
