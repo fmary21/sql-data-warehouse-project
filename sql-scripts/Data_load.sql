@@ -1,3 +1,5 @@
+------Bulk loading data into tables -------
+
 Truncate Table Bronze.crm_cust_info;
 Bulk Insert Bronze.crm_cust_info
 From 'C:\sql\sql-data-warehouse-project\datasets\source_crm\cust_info.csv'
