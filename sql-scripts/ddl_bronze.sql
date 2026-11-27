@@ -1,3 +1,14 @@
+/*
+================================================================================================
+DDL SCRIPT. CREATE BRONZE TABLES
+================================================================================================
+SCRIPT PURPOSE:
+    This script creates tables in the 'bronze' schhema, dropping existing tables 
+    if they already exist. 
+    Run this script to re-define the DDL structure of 'bronze' Tables
+===============================================================================================
+*/
+    
 CREATE OR ALTER PROCEDURE Bronze.load_bronze AS
 BEGIN
   DECLARE @start_time DATETIME, @end_time DATETIME ,@batch_start_time DATETIME ,@batch_end_time DATETIME; 
